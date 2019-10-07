@@ -3,13 +3,20 @@ server:
   port: 8080
   
 #Spring Security Configuration
-spring:  security:    user:      name: sunil
-      password: sunil123
-      roles: ADMIN, USER
+#spring:#  security:#    user:#      name: sunil
+#      password: sunil123
+#      roles: ADMIN, USER
       
 #Spring OAuth2 Configuration
-security:  oauth2:    client:      client-id: mobile
-      client-secret: pin
-      access-token-validity-seconds: 3600
-      authorized-grant-types: refresh_token, authorization_code, password, client_credentials
-      scope: READ, WRITE
+#security:#  oauth2:#    client:#      client-id: mobile
+#      client-secret: pin
+#      access-token-validity-seconds: 3600
+#      authorized-grant-types: refresh_token, authorization_code, password, client_credentials
+#      scope: READ, WRITE
+#    authorization:#      check-token-access: permitAll
+
+#Spring Datasource configuration
+spring:  datasource:    #driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/book_cab
+    username: root
+    password: root
